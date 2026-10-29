@@ -1,0 +1,220 @@
+/* @theme ost */
+
+@import-theme 'default';
+
+:root {
+  /* Primary brand colors */
+  --ost-primary-schwarz: #191919;
+  --ost-primary-brombeer: #8c195f;
+  --ost-primary-himbeer: #d72864;
+
+  /* Secondary colors */
+  --ost-secondary-hellpink: #f087b0;
+  --ost-secondary-grau: #878786;
+  --ost-secondary-hellgrau: #c6c6c5;
+  --ost-secondary-dunkelrot: #c32e15;
+  --ost-secondary-rot: #e84d0e;
+  --ost-secondary-hellrot: #f39a8b;
+  --ost-secondary-dunkelorange: #d18e00;
+  --ost-secondary-orange: #fbb900;
+  --ost-secondary-hellorange: #fcd6ae;
+  --ost-secondary-dunkelgruen: #007e6b;
+  --ost-secondary-gruen: #1cae8d;
+  --ost-secondary-hellgruen: #a7d5c2;
+  --ost-secondary-dunkelblau: #0072af;
+  --ost-secondary-blau: #0085cd;
+  --ost-secondary-hellblau: #5fbfed;
+  --ost-secondary-dunkelviolett: #6b3881;
+  --ost-secondary-violett: #945fa4;
+  --ost-secondary-hellviolett: #d0a9d0;
+
+  /* Non-brand utilities */
+  --ost-bg-soft: #f7f4f6;
+  --ost-font-scale: 2em;
+}
+
+section {
+  color: var(--ost-primary-schwarz);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--ost-font-scale);
+}
+
+h1,
+h2 {
+  color: var(--ost-primary-brombeer);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ost-primary-schwarz);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+  color: var(--ost-primary-himbeer);
+}
+
+strong {
+  color: var(--ost-primary-himbeer);
+}
+
+mark {
+  background: var(--ost-secondary-orange);
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em;
+}
+
+mark.good {
+  background: var(--ost-secondary-gruen);
+}
+
+mark.bad {
+  background: var(--ost-secondary-rot);
+}
+
+li::marker {
+  color: var(--ost-primary-brombeer);
+}
+
+blockquote {
+  border-left: 0.18em solid var(--ost-primary-himbeer);
+  padding-left: 0.7em;
+}
+
+table th {
+  background: var(--ost-primary-brombeer);
+  color: white;
+}
+
+table th,
+table td {
+  border-color: var(--ost-secondary-hellgrau);
+}
+
+header,
+footer {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  color: var(--ost-secondary-grau);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6em;
+}
+
+header {
+  top: 30px;
+}
+
+footer {
+  bottom: 24px;
+  min-height: 44px;
+  padding-left: 122px;
+  display: flex;
+  align-items: center;
+  background-image: url('./open-ost_logo.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 38px;
+}
+
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 24px;
+  right: 50px;
+  color: var(--ost-grau);
+  font-size: 0.6em;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background: var(--ost-secondary-hellgrau);
+  font-weight: bold;
+  padding: 0.3em 0.4em;
+  border-radius: 0.4em;
+}
+
+/* .accent {
+  color: var(--ost-primary-himbeer);
+}
+
+.muted {
+  color: var(--ost-secondary-grau);
+}
+
+.note {
+  background: var(--ost-bg-soft);
+  border-left: 0.2em solid var(--ost-primary-brombeer);
+  padding: 0.6em 0.8em;
+}
+
+.warning {
+  background: #fff5f2;
+  border-left: 0.2em solid var(--ost-secondary-dunkelrot);
+  padding: 0.6em 0.8em;
+} */
+
+/* Columns --------------------------------------------- */
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Boxes --------------------------------------------- */
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.box {
+  flex: 1;
+  min-width: 200px;
+  background: #f2f2f2;
+  border: 0.12em solid var(--ost-primary-brombeer);
+  border-radius: 0.4em;
+  padding: 0.6em 0.8em;
+  box-shadow: 0 0.15em 0.4em rgba(25, 25, 25, 0.25);
+}
+
+/* Cards --------------------------------------------- */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  background: white;
+  border: 0.12em solid var(--ost-primary-himbeer);
+  border-radius: 0.4em;
+  padding: 0.6em 0.8em;
+  box-shadow: 0 0.15em 0.4em rgba(25, 25, 25, 0.25);
+}
+
+.card img {
+  width: 2em;
+  height: auto;
+}
+
+.card .logo {
+  font-size: 2em;
+}
