@@ -1,0 +1,2 @@
+- add fallback for workshop using ost llmhub (provide a key)
+- 

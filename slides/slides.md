@@ -42,7 +42,7 @@ Model Runner (Ollama, LM Studio, ...) -api-> Applications [
   Apps (Open WebUI, OpenClaw, Docling),
 ]
 
-Use simple icons for every component. Thinks in the bracktes are example, they should appear exactly like that (do not leave out or expand)
+Use simple icons for every component. Thinks in the brackets are example, they should appear exactly like that (do not leave out or expand)
 
 Use colors defined in theme/ost.css
 
@@ -70,7 +70,19 @@ As well as precisions & Quantization:
 
 ## Ollama
 
-https://docs.ollama.com/
+Ollama is a local LLM runner that provides a CLI and API interface.
+
+- Get started: https://docs.ollama.com/quickstart
+
+Supported API endpoints:
+
+- Ollama API: http://localhost:11434/api
+- OpenAI Chat Completions: http://localhost:11434/v1
+- OpenAI Responses: https://ollama.com/v1/responses
+- Anthropic Messages: http://localhost:11434
+- System One (decisions): http://localhost:11434/v1/systemone
+
+We will use the OpenAI Chat Completions in this workshop
 
 ---
 
@@ -122,6 +134,18 @@ In general: If links are given in the above bullet points, do not read them and 
 --> 
 
 ## LM Studio
+
+LM Studio is a local LLM runner that provides a **GUI and API interface**. It provide the same features like Ollama and some more
+
+- Model management
+- Customization
+- Tool usage (MCP)
+- Chat
+- 
+
+Like Ollama, several API endpoints are supported.
+
+The rather new Bionic provides even more features similar do e.g. Claude Desktop: for creativity, work, and code
 
 ---
 
@@ -178,11 +202,15 @@ then in mcp2.md:
 
 ask them to install an mcp locally and include them as well. Any good ideas for an good or funny mcp that does not need a lot of setup and is easy to use, yet safe?
 
+https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
+
 --> 
 
 ---
 
 ## Creating your own MCP
+
+https://github.com/modelcontextprotocol
 
 <!-- AGENT
 
@@ -198,12 +226,38 @@ Make sure the FastMCP logs/prints all calls, so they can see what happens
 
 ## Local RAG
 
+RAG (Retrieval Augmented Generation) is a technique to include relevant external information into the LLM to improve the quality of the generated output.
+
+The simplified pipeline is:
+
+1. Chunk the documents (text, pdf, html, ...)
+2. Create embeddings for each chunk
+3. Store the embeddings in a vector store (Chroma, LanceDB, ...)
+4. When a user query comes in, create an embedding for the query
+5. Retrieve the most relevant chunks by doing a similarity search of the embeddings in the vector store
+6. Prompt the LLM including the query and retrieved chunks to generate a response
+
+<!-- IDEA
+
+minimal code (best for teaching how RAG works)
+
+LLM + embeddings: Ollama, which serves both chat and embedding models behind one API
+Embedding model: nomic-embed-text, bge-m3, or EmbeddingGemma
+Vector store: Chroma (simplest, pip install, no server); alternatives are LanceDB or sqlite-vec
+Glue: plain Python, about 50 lines (chunk, embed, store, retrieve, prompt); this makes every step visible
+Optional framework: LlamaIndex is the simplest if you want less code
+Parsing: pypdf for simple PDFs, Docling for complex layouts
+Optional UI: Gradio or Streamlit
+
+-->
+
 ---
 
-## Aftermatch
+## Aftermath
 
 Things explicitly not covered, but you should read about if you are not familiar with:
 
+- How does an LLM work (transformer, embeddings, auto-regressive, attention, etc.)
 - AGENTS.md and SKILL.md files
 - Settings like temperature, top_p
 - LLM Security and guardrails
@@ -212,3 +266,5 @@ Things explicitly not covered, but you should read about if you are not familiar
 Thinks to explore yourself:
 
 - Install and use **Open WebUI**
+- The full capabilities of agent SDK's (e.g. guardrails, subagents, ...)
+- Build simple frontends and Apps using streamlit or gradio
