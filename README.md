@@ -1,13 +1,18 @@
-# Marp /Marpit Slides example
+# Local LLMs
 
-## Example
+Workshop for OSS Meetup
 
-- take a lock at the the **==> [OST example slides](slides/slides.pdf)<==**
-- more info in the [Ost Theme README](slides/theme/README.md)
-- the `AGENTS.md` is also human-readable and explain how Marp slides work
+## Slides
 
-## Info/Setup
+see `slides/`
 
-- Marp/Marpid Slides: https://marpit.marp.app/
-- Use the vscode extension: https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
+## Workshop
 
+install dependencies with:
+
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/#installing-uv)
+2. `uv sync`
+
+see `workshop/`
+
+## 
