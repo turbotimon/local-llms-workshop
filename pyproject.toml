@@ -1,0 +1,13 @@
+[project]
+name = "local-llms-workshop"
+version = "0.1.0"
+description = "Workshop: local LLMs with open-weights models"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai-slim[openai]",
+    "requests",
+    "fastmcp",
+    "ollama",
+    "chromadb",
+    "pypdf",
+]
