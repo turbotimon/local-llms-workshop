@@ -27,4 +27,13 @@ Some useful commands:
 - `ollama run --verbose <model_id>`: Show token usage and speed
 - `ollama list`: Show all models
 
-You can also explore the [Quickstart](https://docs.ollama.com/quickstart) on your own
+## (4. Optional)
+
+- Explore the [Quickstart](https://docs.ollama.com/quickstart)
+- Explore the full [CLI](https://docs.ollama.com/cli)
+- Try out a [Decicion Model](https://docs.ollama.com/capabilities/decision)*
+
+\* A decision model is a special model can only answer one of these question types. The benefit is, it can do so in just one-forward pass (just one token to create) and therefore is faster than generating a full answer:
+- Yes/No
+- Choose from predefined list
+- Score on a predefined score
