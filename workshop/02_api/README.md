@@ -43,7 +43,7 @@ Force JSON output, e.g. `{"city": ..., "canton": ..., "population": ...}`.
 
 IMPL: Add a JSON schema / response format to the request.
 
-### 4. Vision
+### 4. Multimodal Input (Vision)
 
 Send `bern.jpg` (in this folder) and ask "Which city is shown in the image?".
 Hint: images are sent base64-encoded (`base64 -w0 bern.jpg`).
