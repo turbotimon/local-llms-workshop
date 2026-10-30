@@ -133,6 +133,8 @@ In general: If links are given in the above bullet points, do not read them and 
 
 --> 
 
+---
+
 ## LM Studio
 
 LM Studio is a local LLM runner that provides a **GUI and API interface**. It provide the same features like Ollama and some more
