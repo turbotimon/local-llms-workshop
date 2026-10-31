@@ -18,13 +18,14 @@ Pull the model `ollama run <model_id>`
 
 ## 3. Run some basic test
 
-Run it and explor it: `ollama run <model_id>`
+Run it the model and chat with it: `ollama run <model_id>`
 
 Some useful commands:
 
 - `/bye`: to exit while running a model
 - `/?`: show all command while running a model
 - `ollama run --verbose <model_id>`: Show token usage and speed
+- `ollama run <model_id> "What is the capital of Switzerland?"`: Run a model non-interactively
 - `ollama list`: Show all models
 
 ## (4. Optional)
