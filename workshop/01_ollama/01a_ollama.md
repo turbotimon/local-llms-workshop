@@ -20,7 +20,7 @@ Pull the model `ollama run <model_id>`
 
 Run it the model and chat with it: `ollama run <model_id>`
 
-Some useful commands:
+Some useful CLI commands:
 
 - `/bye`: to exit while running a model
 - `/?`: show all command while running a model
