@@ -1,6 +1,8 @@
 # 03 – Agent harnesses (OpenCode)
 
-An agent harness wraps a model with tools such as reading and writing files and running commands. In this part you run OpenCode with a local model.
+An agent harness wraps a model with tools such as reading and writing files and running commands.
+
+There are many agent harnesses available. In this part we will use OpenCode as an example.
 
 ## 1. Install OpenCode
 
@@ -62,7 +64,7 @@ Minimal `opencode.json` with both local providers. Keep the one you use:
 - Ollama: if tool calls don't work, increase `num_ctx` in Ollama. The docs suggest starting with 16k to 32k.
 - Optional: use `"permission": { "edit": "ask", "bash": "ask" }` to make OpenCode ask before it edits files or runs commands.
 
-IMPL: Create `opencode.json` for your provider and model.
+Create `opencode.json` for your provider and model.
 
 ## 3. Let the agent write code
 
@@ -71,7 +73,7 @@ cd workshop/03_harnesses
 opencode
 ```
 
-IMPL: Paste a prompt like this one:
+Paste a prompt like this one:
 
 ```text
 Write a Python script weather.py with a function
@@ -94,4 +96,4 @@ uv sync          # once, at repo root
 uv run weather.py
 ```
 
-IMPL: Run the script. If it fails, give the error to the agent and let it fix the script.
+Run the script. If it fails, give the error to the agent and let it fix the script.

@@ -19,8 +19,17 @@ agent = Agent(
     ),
 )
 
-# IMPL: add a tool get_time() -> str that returns the current time (hint: @agent.tool_plain, datetime)
+# IMPL: add a tool get_time() -> str that returns the current time
 #       docs: https://ai.pydantic.dev/tools/
+def get_time() -> str:
+    pass
 
-result = agent.run_sync("What time is it?")
-print(result.output)
+# Try it out by asking the model: "What time is it?"
+
+print(f"Write 'exit' or 'quit' or press Ctrl+C to stop the program.")
+while True:
+    user_input = input(">>> ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
+    result = agent.run_sync(user_input)
+    print(f"Answer: {result.output}")

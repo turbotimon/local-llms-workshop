@@ -1,13 +1,17 @@
 # 04b – Use a local MCP (fetch)
 
-A local MCP server runs as a process on your machine. Example: the fetch server
+In this part we will see how to use a local MCP server and include it in our OpenCode config.
+
+A local MCP server runs as a process on your machine. We will use the fetch server MCP as an example: 
 https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
 
 It provides a `fetch` tool that loads a URL and returns its content as Markdown.
 
+You can find many other MCP server examples in the same repo. Most MCP are commonly instlled with `npx` or `uvx`. Do get a better isolation, you can also run them in Docker.
+
 ## 1. Try the server
 
-Using `uvx`, no install needed:
+Install it with `uvx`:
 
 ```bash
 uvx mcp-server-fetch
@@ -34,14 +38,12 @@ Add this to your `opencode.json`:
 }
 ```
 
-IMPL: Add the snippet and start `opencode` again.
+Then start start `opencode` again.
 
 ## 3. Use it
 
-IMPL: Ask the agent:
+Ask the agent:
 
 ```text
-use the fetch tool to fetch https://ollama.com/blog and summarize the latest posts
+fetch https://www.open-ost.ch/events/ and tell me the next upcoming event
 ```
-
-IMPL: Check that the agent calls the `fetch` tool and does not answer from memory.

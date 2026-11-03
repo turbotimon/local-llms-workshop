@@ -12,5 +12,10 @@ model = OpenAIChatModel("google/gemma-4-e4b", provider=provider)
 #       docs: https://ai.pydantic.dev/agents/#model-run-settings
 agent = Agent(model)
 
-result = agent.run_sync("You are MC LMM, only answer in sweet rap rhymes: What time is it?")
-print(result.output)
+print(f"Write 'exit' or 'quit' or press Ctrl+C to stop the program.")
+while True:
+    user_input = input(">>> ")
+    if user_input.lower() in ["exit", "quit"]:
+        break
+    result = agent.run_sync(user_input)
+    print(f"Answer: {result.output}")

@@ -4,12 +4,15 @@ from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-# LM Studio server (Developer tab -> Start Server); local, so any api_key works
-provider = OpenAIProvider(base_url="http://localhost:1234/v1", api_key="lm-studio")
-# model id as listed by: curl http://localhost:1234/v1/models
-model = OpenAIChatModel("google/gemma-4-e4b", provider=provider)
+BASE_URL = "http://localhost:1234/v1"
+MODEL_NAME = "qwen/qwen3.5-9b"
+
+provider = OpenAIProvider(base_url=BASE_URL, api_key="<not needed>")
+
+model = OpenAIChatModel(MODEL_NAME, provider=provider)
 
 agent = Agent(model)
 
-result = agent.run_sync("You are MC LMM, only answer in sweet rap rhymes: What time is it?")
-print(result.output)
+result = agent.run_sync("You are MC LMM, only answer in sweet rap rhymes (max. 5 bars): What time is it?")
+print(f"*** OUTPUT ***")
+print(result.output["message"]["content"])

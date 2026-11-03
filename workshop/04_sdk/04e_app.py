@@ -21,9 +21,10 @@ def get_time() -> str:
     """Return the current local time."""
     return datetime.now().strftime("%H:%M")
 
+# IMPL: send ../01_api/bern.jpg with the question "Which city is shown in the image?"
+#       find out yourself how: https://ai.pydantic.dev/input/
 
 result = agent.run_sync("What time is it?")
 print(result.output)
 
-# IMPL: send ../01_api/bern.jpg with the question "Which city is shown in the image?"
-#       find out yourself how: https://ai.pydantic.dev/input/
+
