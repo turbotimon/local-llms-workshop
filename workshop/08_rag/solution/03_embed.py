@@ -5,7 +5,7 @@ from pathlib import Path
 import chromadb
 import ollama
 
-HERE = Path(__file__).parent.parent
+HERE = Path(__file__).parent
 CHUNK_DIR = HERE / "chunks"
 EMBED_MODEL = "nomic-embed-text"
 

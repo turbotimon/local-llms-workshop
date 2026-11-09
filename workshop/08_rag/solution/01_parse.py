@@ -4,7 +4,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
-HERE = Path(__file__).parent.parent
+HERE = Path(__file__).parent
 PDF_DIR = HERE / "pdf"
 OUT_DIR = HERE / "markdown"
 OUT_DIR.mkdir(exist_ok=True)

@@ -3,13 +3,13 @@
 import re
 from pathlib import Path
 
-HERE = Path(__file__).parent.parent
+HERE = Path(__file__).parent
 IN_DIR = HERE / "markdown"
 OUT_DIR = HERE / "chunks"
 OUT_DIR.mkdir(exist_ok=True)
 
 STRATEGY = "length"  # "length" or "header"
-CHUNK_SIZE = 1000  # characters per chunk
+CHUNK_SIZE = 600  # characters per chunk
 HEADER_LEVEL = 2  # split at "## " headers (and higher levels)
 
 

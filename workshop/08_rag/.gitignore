@@ -1,3 +1,9 @@
 markdown/
 chunks/
 db/
+
+solution/pdf/*
+solution/markdown/*
+solution/chunks/*
+solution/db/*
+

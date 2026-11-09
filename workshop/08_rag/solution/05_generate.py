@@ -6,7 +6,7 @@ from pathlib import Path
 import chromadb
 import ollama
 
-HERE = Path(__file__).parent.parent
+HERE = Path(__file__).parent
 EMBED_MODEL = "nomic-embed-text"
 CHAT_MODEL = "gemma4:e4b"
 N = 3
