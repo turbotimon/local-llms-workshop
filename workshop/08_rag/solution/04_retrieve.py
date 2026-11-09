@@ -1,4 +1,4 @@
-"""Step 4 – retrieve: top N chunks for a question. Run: uv run workshop/06_rag/solution/04_retrieve.py "your question" """
+"""Step 4 – retrieve: top N chunks for a question. Run: uv run workshop/08_rag/solution/08f_retrieve.py "your question" """
 
 import sys
 from pathlib import Path

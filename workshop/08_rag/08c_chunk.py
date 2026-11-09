@@ -1,4 +1,4 @@
-"""Step 2 – chunk: markdown/ -> small text pieces in chunks/. Run: uv run workshop/06_rag/02_chunk.py"""
+"""Step 2 – chunk: markdown/ -> small text pieces in chunks/. Run: uv run workshop/08_rag/08c_chunk.py"""
 
 import re
 from pathlib import Path

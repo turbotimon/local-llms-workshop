@@ -1,4 +1,4 @@
-"""Step 1 – parse: PDFs in pdf/ -> text in markdown/. Run: uv run workshop/06_rag/01_parse.py"""
+"""Step 1 – parse: PDFs in pdf/ -> text in markdown/. Run: uv run workshop/08_rag/08b_parse.py"""
 
 from pathlib import Path
 

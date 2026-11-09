@@ -1,4 +1,4 @@
-"""Step 3 – embed: chunks/ -> vectors in a Chroma db in db/. Run: uv run workshop/06_rag/03_embed.py"""
+"""Step 3 – embed: chunks/ -> vectors in a Chroma db in db/. Run: uv run workshop/08_rag/08d_embed.py"""
 
 from pathlib import Path
 

@@ -176,7 +176,7 @@ The simplified pipeline is:
 5. Retrieve the most relevant chunks by doing a similarity search of the embeddings in the vector store
 6. Prompt the LLM including the query and retrieved chunks to generate a response
 
-Workshop: `workshop/06_rag/` – Ollama + nomic-embed-text + Chroma, one script per step
+Workshop: `workshop/08_rag/` – Ollama + nomic-embed-text + Chroma, one script per step
 
 ---
 
