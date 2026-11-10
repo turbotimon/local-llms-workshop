@@ -1,8 +1,12 @@
 # Explore the API
 
-To understand the API, we will make some raw curl calls. We use the OpenAI Chat Completions endpoint: `v1/chat/completions`
+To understand the API, we will make some raw curl calls. We use the [Ollama `/api`](https://docs.ollama.com/api/introduction) and the OpenAI Chat Completions endpoint: [`v1/chat/completions`](https://developers.openai.com/api/reference/resources/chat)
 
-## Minimal Example
+Also see: [OpenAI compatibility](https://docs.ollama.com/api/openai-compatibility#%2Fv1%2Fchat%2Fcompletions)
+
+## Chat Completion: Minimal Example
+
+Since we are local, we do not need an API key
 
 ```sh
 curl http://localhost:11434/v1/chat/completions \
@@ -15,11 +19,11 @@ curl http://localhost:11434/v1/chat/completions \
   }'
 ```
 
-## Yor Tasks
+## Your Tasks
 
 ### 1. Basics
 
-Change the above example to your model and the following question. Explore the result:
+Change the above example to your model id and the following question. Explore the result:
 
 > "What is the capital of Switzerland?"
 
@@ -41,7 +45,7 @@ See the [documentation](https://docs.ollama.com/capabilities/structured-outputs)
 > Force JSON output, e.g. `[{"city": ..., "canton": ..., "population": ...}]`.
 > Ask the question: "List the 5 biggest cities of switzerland"
 
-### 4. Multimodal Input (Vision)
+### (4. Optional: Multimodal Input / Vision)
 
 Choose a model that supports vision capabilities. Send `bern.jpg` (in this folder) and ask "Which city is shown in the image?".
 

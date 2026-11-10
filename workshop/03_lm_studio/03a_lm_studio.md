@@ -24,3 +24,12 @@ Explore the settings in the UI and try out the following:
 ## (4. Optional)
 
 Explore more functions of LM Studio form their [documentation](https://lmstudio.ai/docs/app).
+
+For example:
+
+- Try out "ML Link" to connect your mobile device to your computer
+- Try out multimodal input (vision)
+- Integrate web search
+- Create a model.yaml
+- Create structured (json) output
+- Chat with documents (pdf, txt, docx, etc.)

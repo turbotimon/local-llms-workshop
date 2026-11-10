@@ -9,9 +9,10 @@
 Go to [Ollama Model Search](https://ollama.com/search). Search for a model and pick one that runs
 on your hardware and ideally has: *Tools*, *Thinking* and *Vision*. Also decide on the *quantization*.
 
-- For GPU, "Download Size" should ideally not be more than ~80% of your GPU RAM
+- For NVIDIA GPUs, "Download Size" should ideally not be more than ~80% of your GPU RAM
   - For example *gemma4:e4b* or *qwen3.5:4b*
-- For CPU, pick a small model (probably has not tool, thinking and vision but that is fine for the moment)
+
+- For CPU or weaker hardware, pick a small model (probably has not tool, thinking and vision but that is fine for the moment)
   - For example *gemma3:1b*
 
 Pull the model `ollama run <model_id>`

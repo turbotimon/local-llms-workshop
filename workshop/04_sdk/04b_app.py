@@ -5,7 +5,9 @@ from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
 BASE_URL = "http://localhost:1234/v1"
-MODEL_NAME = "qwen/qwen3.5-9b"
+
+# IMPL set your model here
+MODEL_NAME = ""
 
 provider = OpenAIProvider(base_url=BASE_URL, api_key="<not needed>")
 

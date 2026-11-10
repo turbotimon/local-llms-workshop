@@ -22,9 +22,9 @@ Put the config in one of these places:
 - Project: `opencode.json` in the folder where you start OpenCode (here `workshop/03_harnesses/opencode.json`)
 - Global: `~/.config/opencode/opencode.json`
 
-OpenCode merges both files. If a key is set in both, the project file wins.
+OpenCode merges both files, the project file wins.
 
-Minimal `opencode.json` with both local providers. Keep the one you use:
+Minimal `opencode.json` with both local providers. Adopt it to your needs and save it:
 
 ```json
 {
@@ -37,8 +37,9 @@ Minimal `opencode.json` with both local providers. Keep the one you use:
         "baseURL": "http://localhost:11434/v1"
       },
       "models": {
-        "gemma4:e4b": {
-          "name": "Gemma 4 e4b (Ollama)"
+        // IMPL replace with your model-id and give it a name of your choice
+        "<model-id>": {
+          "name": "<name>"
         }
       }
     },
@@ -48,23 +49,21 @@ Minimal `opencode.json` with both local providers. Keep the one you use:
       "options": {
         "baseURL": "http://localhost:1234/v1"
       },
+      // IMPL replace with your model-id and give it a name of your choice
       "models": {
         "<your-model-id>": {
-          "name": "My LM Studio model"
+          "name": "<name>"
         }
       }
     }
   },
-  "model": "ollama/gemma4:e4b"
+  // set a default model (optional)
+  //"model": "<default model>"
 }
 ```
 
 - `model`: default model in the format `provider-id/model-id`. You can also switch models in the TUI with `/models`.
-- LM Studio: replace `<your-model-id>` with the id shown by `curl http://localhost:1234/v1/models`.
-- Ollama: if tool calls don't work, increase `num_ctx` in Ollama. The docs suggest starting with 16k to 32k.
 - Optional: use `"permission": { "edit": "ask", "bash": "ask" }` to make OpenCode ask before it edits files or runs commands.
-
-Create `opencode.json` for your provider and model.
 
 ## 3. Let the agent write code
 
@@ -73,7 +72,9 @@ cd workshop/03_harnesses
 opencode
 ```
 
-Paste a prompt like this one:
+- Check if your models are avilable with `/models`. If not, check your `opencode.json` and the model id.
+
+- Paste a prompt like this one:
 
 ```text
 Write a Python script weather.py with a function
@@ -82,6 +83,7 @@ for a city using the Open-Meteo API (https://open-meteo.com/en/docs).
 First get the coordinates of the city with the geocoding API
 (https://open-meteo.com/en/docs/geocoding-api).
 Use the requests library. Add a __main__ block that prints the temperature for "Zurich".
+Use pyproject.toml and uv at the root fo this repo.
 ```
 
 Hints:
