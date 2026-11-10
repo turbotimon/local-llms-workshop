@@ -117,7 +117,9 @@ Reducing the precision of the model weights to save memory and speed up inferenc
 
 Ollama is a local LLM runner that provides a CLI and API interface.
 
-- Get started: https://docs.ollama.com/quickstart
+Workshop:
+- [`gitlab.ost.ch/timon.erhart/local-llms-workshop`](https://gitlab.ost.ch/timon.erhart/local-llms-workshop)
+- `workshop/01_ollama/`
 
 ---
 
