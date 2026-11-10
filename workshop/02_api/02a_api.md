@@ -31,9 +31,7 @@ Change the above example to your model id and the following question. Explore th
 
 Look at the [documentation about thinking](https://docs.ollama.com/capabilities/thinking) to explore your models thinking capability, include these setting in your request.
 
-Choose a question, e.g.
-
-> "Why do some people think the capital of Switzerland is Zurich?"
+For example, disable the thinking capability to get a faster response.
 
 ### 3. Structured output
 
