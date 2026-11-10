@@ -14,5 +14,3 @@ install dependencies with:
 2. `uv sync`
 
 see `workshop/`
-
-## 

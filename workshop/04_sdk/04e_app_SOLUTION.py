@@ -7,7 +7,7 @@ from pydantic_ai import Agent, BinaryContent, ModelSettings
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-IMAGE = Path(__file__).parent.parent / "01_api" / "bern.jpg"
+IMAGE = Path(__file__).parent.parent / "02_api" / "bern.jpg"
 
 provider = OpenAIProvider(base_url="http://localhost:1234/v1", api_key="lm-studio")
 model = OpenAIChatModel("google/gemma-4-e4b", provider=provider)  # needs a vision model

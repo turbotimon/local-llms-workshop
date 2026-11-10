@@ -1,4 +1,4 @@
-"""Step 5 – generate: answer a question with retrieved context. Run: uv run workshop/08_rag/08e_generate.py "your question" """
+"""Step 5 – generate: answer a question with retrieved context. Run: uv run workshop/08_rag/08f_generate.py "your question" """
 
 import sys
 from pathlib import Path
