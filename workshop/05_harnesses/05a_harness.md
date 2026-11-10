@@ -19,12 +19,14 @@ IMPL: Install OpenCode and check that `opencode` starts.
 
 Put the config in one of these places:
 
-- Project: `opencode.json` in the folder where you start OpenCode (here `workshop/03_harnesses/opencode.json`)
+- Project: `opencode.jsonc`* in the folder where you start OpenCode (here `workshop/03_harnesses/opencode.jsonc`)
 - Global: `~/.config/opencode/opencode.json`
+
+\* `jsonc` is JSON with comments, but a regular `json` file works too.
 
 OpenCode merges both files, the project file wins.
 
-Minimal `opencode.json` with both local providers. Adopt it to your needs and save it:
+Minimal `opencode.jsonc` with both local providers. Adopt it to your needs and save it:
 
 ```json
 {
@@ -90,6 +92,9 @@ Hints:
 
 - Getting the coordinates of a city is a separate step. Use the geocoding API: https://open-meteo.com/en/docs/geocoding-api
 - `requests` is already in the root `pyproject.toml`. If it is missing, run `uv add requests`.
+- The open-code harness predefined a long system prompt, this means:
+  - you wait longer for the answer, as the input needs to be processed by the model first
+  - you may need to increase to context length for your model if you get an error.
 
 ## 4. Run it
 
@@ -99,3 +104,10 @@ uv run weather.py
 ```
 
 Run the script. If it fails, give the error to the agent and let it fix the script.
+
+## (5. Optional: Discover more)
+
+- Discover more [configuration options](https://opencode.ai/docs/config/)
+- Read about [available commands](https://opencode.ai/docs/commands/)
+- Create your [own agent with his own instructions and permissions](https://opencode.ai/docs/agents/)
+- Use [skills](https://opencode.ai/docs/skills/)
