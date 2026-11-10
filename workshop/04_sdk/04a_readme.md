@@ -4,6 +4,10 @@ In this exercise, we will use the `pydantic-ai` SDK to interact with a local LLM
 
 These SDKs are more convenient than using the raw API and provide lots of useful features.
 
+## Prerequisites
+
+Before starting, read the [README](../README.md) on how to install `uv`.
+
 ## Provider
 
 The exercises are configured to use LLM Studio as the provider. But you can also change it to Ollama or, if you have problems running decent models on your local machine, use the OST LLM Hub:
