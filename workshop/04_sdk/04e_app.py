@@ -1,4 +1,4 @@
-"""04 (optional) – Images: send a picture to the model. Run: uv run workshop/02_sdk/app_04.py"""
+"""04 (optional) – Images: send a picture to the model. Run: uv run workshop/04_sdk/04e_app.py"""
 
 from datetime import datetime
 
@@ -21,7 +21,7 @@ def get_time() -> str:
     """Return the current local time."""
     return datetime.now().strftime("%H:%M")
 
-# IMPL: send ../01_api/bern.jpg with the question "Which city is shown in the image?"
+# IMPL: send ../02_api/bern.jpg with the question "Which city is shown in the image?"
 #       find out yourself how: https://ai.pydantic.dev/input/
 
 result = agent.run_sync("What time is it?")

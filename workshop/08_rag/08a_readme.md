@@ -17,8 +17,8 @@ Put your PDF(s) into `pdf/`.
 uv run workshop/08_rag/08b_parse.py
 uv run workshop/08_rag/08c_chunk.py
 uv run workshop/08_rag/08d_embed.py
-uv run workshop/08_rag/08f_retrieve.py "your question"
-uv run workshop/08_rag/08e_generate.py "your question"
+uv run workshop/08_rag/08e_retrieve.py "your question"
+uv run workshop/08_rag/08f_generate.py "your question"
 ```
 
 IMPL: fill in the `# IMPL:` lines in every file. Look at the output folder after each step.

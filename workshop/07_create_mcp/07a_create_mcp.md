@@ -1,4 +1,4 @@
-# 05 – Create your own MCP
+# 07 – Create your own MCP
 
 In this part we will create our own MCP server. It is very similar to a tool, but not tightly coupled to just on application. Instead, it runs as a separate process and can be used by multiple applications. It is also easier to reuse or share with others.
 
@@ -11,7 +11,7 @@ Fill in `get_temperature` in [07b_create_mcp.py](07b_create_mcp.py).
 ## 2. Run the server
 
 ```bash
-uv run workshop/05_create_mcp/server.py
+uv run workshop/07_create_mcp/07b_create_mcp.py
 ```
 
 The MCP endpoint is `http://127.0.0.1:8000/mcp`. Keep the terminal open to see the log.

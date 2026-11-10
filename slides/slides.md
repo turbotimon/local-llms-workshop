@@ -155,7 +155,7 @@ curl https://ollama.com/v1/chat/completions \
   }'
 ```
 
-Workshop: `workshop/01_api/`
+Workshop: `workshop/02_api/`
 
 ---
 
@@ -174,6 +174,8 @@ Workshop: `workshop/01_api/`
 
 - (The rather new **Bionic** provides even more features similar do e.g. Claude Desktop: for creativity, work, and code)
 
+Workshop: `workshop/03_lm_studio/`
+
 ---
 
 ## Usage 2: Python SDK & Tools
@@ -189,7 +191,7 @@ Workshop: `workshop/01_api/`
 - **Tools**: Functions the model can decide to call
 
 
-Workshop: `workshop/02_sdk/`
+Workshop: `workshop/04_sdk/`
 
 ---
 
@@ -204,7 +206,7 @@ Workshop: `workshop/02_sdk/`
   - (Claude Code / Codex / GitHub Copilot)
   - ...
 
-Workshop: `workshop/03_harnesses/`
+Workshop: `workshop/05_harnesses/`
 
 ---
 
@@ -216,7 +218,7 @@ Workshop: `workshop/03_harnesses/`
   - **Remote** MCP: hosted on a server
   - **Local** MCP: runs on your machine
 
-Workshop: `workshop/04_use_mcp/`
+Workshop: `workshop/06_use_mcp/`
 
 ---
 
@@ -224,7 +226,7 @@ Workshop: `workshop/04_use_mcp/`
 
 - We will use [FastMCP](https://gofastmcp.com)
 
-Workshop: `workshop/05_create_mcp/`
+Workshop: `workshop/07_create_mcp/`
 
 ---
 

@@ -1,4 +1,4 @@
-"""03 – Tools: let the model call a Python function. Run: uv run workshop/02_sdk/app_03.py"""
+"""03 – Tools: let the model call a Python function. Run: uv run workshop/04_sdk/04d_app.py"""
 
 from pydantic_ai import Agent, ModelSettings
 from pydantic_ai.models.openai import OpenAIChatModel

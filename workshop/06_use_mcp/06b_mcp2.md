@@ -1,4 +1,4 @@
-# 04b – Use a local MCP (fetch)
+# 06b – Use a local MCP (fetch)
 
 In this part we will see how to use a local MCP server and include it in our OpenCode config.
 

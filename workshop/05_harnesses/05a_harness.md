@@ -1,4 +1,4 @@
-# 03 – Agent harnesses (OpenCode)
+# 05 – Agent harnesses (OpenCode)
 
 An agent harness wraps a model with tools such as reading and writing files and running commands.
 
@@ -19,7 +19,7 @@ IMPL: Install OpenCode and check that `opencode` starts.
 
 Put the config in one of these places:
 
-- Project: `opencode.jsonc`* in the folder where you start OpenCode (here `workshop/03_harnesses/opencode.jsonc`)
+- Project: `opencode.jsonc`* in the folder where you start OpenCode (here `workshop/05_harnesses/opencode.jsonc`)
 - Global: `~/.config/opencode/opencode.json`
 
 \* `jsonc` is JSON with comments, but a regular `json` file works too.
@@ -70,7 +70,7 @@ Minimal `opencode.jsonc` with both local providers. Adopt it to your needs and s
 ## 3. Let the agent write code
 
 ```bash
-cd workshop/03_harnesses
+cd workshop/05_harnesses
 opencode
 ```
 

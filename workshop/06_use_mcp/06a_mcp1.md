@@ -1,4 +1,4 @@
-# 04a – Use a remote MCP (Context7)
+# 06a – Use a remote MCP (Context7)
 
 In this part we will see how to use a remote MCP server and include it in our OpenCode config. 
 

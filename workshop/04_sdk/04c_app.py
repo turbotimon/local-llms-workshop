@@ -1,4 +1,4 @@
-"""02 – Settings: system prompt, temperature, top_p, reasoning, ... Run: uv run workshop/02_sdk/app_02.py"""
+"""02 – Settings: system prompt, temperature, top_p, reasoning, ... Run: uv run workshop/04_sdk/04c_app.py"""
 
 from pydantic_ai import Agent, ModelSettings
 from pydantic_ai.models.openai import OpenAIChatModel

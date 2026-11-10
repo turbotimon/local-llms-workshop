@@ -1,4 +1,4 @@
-"""01 – Call a local model with Pydantic AI. Run: uv run workshop/02_sdk/app_01.py"""
+"""01 – Call a local model with Pydantic AI. Run: uv run workshop/04_sdk/04b_app.py"""
 
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel

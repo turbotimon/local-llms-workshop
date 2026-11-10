@@ -1,4 +1,4 @@
-"""Step 5 – generate: answer a question with retrieved context. Run: uv run workshop/08_rag/solution/08e_generate.py "your question" """
+"""Step 5 – generate: answer a question with retrieved context. Run: uv run workshop/08_rag/solution/08f_generate.py "your question" """
 
 import sys
 from pathlib import Path
@@ -13,7 +13,7 @@ N = 3
 
 query = " ".join(sys.argv[1:]) or input("Question: ")
 
-# retrieve (same as 08f_retrieve.py)
+# retrieve (same as 08e_retrieve.py)
 collection = chromadb.PersistentClient(path=HERE / "db").get_collection("docs")
 query_embedding = ollama.embed(model=EMBED_MODEL, input=query).embeddings[0]
 docs = collection.query(query_embeddings=[query_embedding], n_results=N)["documents"][0]

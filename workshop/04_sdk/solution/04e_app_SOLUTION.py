@@ -1,4 +1,4 @@
-"""04 – Solution: send a picture to the model. Run: uv run workshop/02_sdk/app04_SOLUTION.py"""
+"""04 – Solution: send a picture to the model. Run: uv run workshop/04_sdk/solution/04e_app_SOLUTION.py"""
 
 from datetime import datetime
 from pathlib import Path
